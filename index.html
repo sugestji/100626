@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Pretty Girl</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="curtain-transition">
+    <div class="curtain-left"></div>
+    <div class="curtain-right"></div>
+</div>
+
+<!-- PAGE 1 -->
+<section id="page1" class="page active">
+
+<div class="card">
+<h1>For My Pretty Wifey</h1>
+
+<p>Enter our special date</p>
+
+<div id="display" class="pin-display">
+○ ○ ○ ○ ○ ○
+</div>
+
+<div class="keypad">
+
+<button onclick="addNumber('1')">1</button>
+<button onclick="addNumber('2')">2</button>
+<button onclick="addNumber('3')">3</button>
+
+<button onclick="addNumber('4')">4</button>
+<button onclick="addNumber('5')">5</button>
+<button onclick="addNumber('6')">6</button>
+
+<button onclick="addNumber('7')">7</button>
+<button onclick="addNumber('8')">8</button>
+<button onclick="addNumber('9')">9</button>
+
+<button onclick="removeNumber()">⌫</button>
+<button onclick="addNumber('0')">0</button>
+<button onclick="checkPassword()">♡</button>
+
+</div>
+
+<p id="error"></p>
+
+</div>
+
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2" class="page">
+
+<h1>The Prettiest Gallery</h1>
+    <div class="gallery">
+        <div class="polaroid fade-item">
+            <img src="img1.jpg">
+            <p>Cute</p>
+        </div>
+
+        <div class="polaroid fade-item">
+            <img src="img2.jpg">
+            <p>Gorgeous</p>
+        </div>
+
+        <div class="polaroid fade-item">
+            <img src="img3.jpg">
+            <p>Pretty</p>
+        </div>
+
+        <div class="polaroid fade-item">
+            <img src="img4.jpg">
+            <p>My favorite smile</p>
+        </div>
+
+        <div class="polaroid fade-item">
+            <img src="img5.jpg">
+            <p>My favorite person</p>
+        </div>
+
+    </div>
+
+    <button onclick="nextPage(3)">
+        Continue
+    </button>
+
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3" class="page">
+
+    <img src="flower.png"
+         class="flower"
+         onclick="showStory()">
+
+    <p class="flower-text">
+        Click the flower ♡
+    </p>
+
+</section>
+
+<!-- PAGE 4 -->
+<section id="page4" class="page">
+
+<h1>You & Me</h1>
+
+<div class="couple-polaroids">
+
+    <div class="polaroid-card">
+        <img src="gf.jpg">
+        <p>Maicy</p>
+    </div>
+
+    <div class="polaroid-card">
+        <img src="me.jpg">
+        <p>Aarav</p>
+    </div>
+
+    <div class="polaroid-card together-portrait">
+        <img src="together.jpg"> <p>Us</p>
+    </div>
+
+</div>
+
+<div class="story-text">
+    <p>
+    Among all the people i could have met,<br>
+    I'm glad it was you, sayang.
+    </p>
+</div>
+
+<button onclick="nextPage(5)">
+Continue
+</button>
+
+</section>
+
+<!-- PAGE 5 -->
+<section id="page5" class="page">
+    <h2>Reasons Why I Love You 💖</h2>
+    <p style="font-size: 13px; color: #aaa; margin-bottom: 10px;">(Click the envelope to open the letter)</p>
+
+    <div id="envelope" class="envelope-wrapper" onclick="toggleEnvelope()">
+        <div class="envelope-flap"></div>
+        <div class="letter-inside">
+            <p id="reasonText"></p>
+        </div>
+        <div class="envelope-body"></div>
+    </div>
+
+    <button onclick="triggerNextReason()">Next Reason</button>
+    <button onclick="nextPage(6)" style="margin-top: 10px; background: #ff477e;">Read My Letter</button>
+</section>
+
+<!-- PAGE 6 -->
+<section id="page6" class="page">
+
+<div class="letter">
+
+<h1>For You</h1>
+
+<p id="typedText"></p>
+
+<button onclick="nextPage(7)">
+Continue
+</button>
+
+</div>
+
+</section>
+
+<!-- PAGE 7 -->
+<section id="page7" class="page">
+    
+    <div id="thank-you-section">
+        <p class="fade-line">Thank you for being part of my life.</p>
+        <p class="fade-line">Thank you for choosing me every day.</p>
+        <p class="fade-line">I love you with all of me, sayang.</p>
+    </div>
+
+    <div id="happy-mensive-section" style="display: none;">
+        <h1 style="font-family: 'Brush Script MT', 'Dancing Script', cursive; font-size: 3rem; color: #ff477e;">
+            Happy Mensiversary, My Love
+        </h1>
+        <p class="hold-hint">(Hold the screen for a surprise...)</p>
+    </div>
+
+    <div id="secret-msg-section" class="secret-section">
+    <div class="glow-msg" style="font-size: 16px; text-align: left; max-height: 70vh; overflow-y: auto;">
+        My love,<br><br>
+        I don’t think you’ll ever fully understand how much I love you. Sometimes I wish I could take all the feelings I have for you and show them to you, because words never seem enough. You’ve become such a special part of my life, and somehow, even after all this time, my heart still finds new reasons to love you.<br><br>
+        I love the way you exist. I love your smile, your voice, your thoughts, your little habits, and all the things that make you you. You bring so much comfort and happiness into my life without even trying. And if there’s one thing I’m always sure about, it’s that my heart feels at home with you. ✨
+    </div>
+    </div>    
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
