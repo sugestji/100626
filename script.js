@@ -72,11 +72,10 @@ function revealPhotos() {
     
     const hint = document.getElementById("hintText");
     if(hint) {
-        hint.style.opacity = "0";
-        setTimeout(() => {
-            hint.style.display = "none";
-        }, 500);
+        hint.style.display = "none";
     }
+    
+    nextPage(4);
 }
 
 const reasons = [
