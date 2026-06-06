@@ -673,3 +673,15 @@ button{
         top: -10px;
     }
 }
+
+@media screen and (max-height: 670px) {
+    .glow-msg {
+        padding: 15px 15px !important; 
+        max-height: 80dvh !important;  
+    }
+    
+    .glow-msg p, .glow-msg {
+        font-size: 13.5px !important;  
+        line-height: 1.4 !important;  
+    }
+}
